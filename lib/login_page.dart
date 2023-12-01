@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class loginPage extends StatefulWidget {
   const loginPage({super.key});
-
   @override
   _loginPageState createState() => _loginPageState();
 }
@@ -86,93 +85,95 @@ class _loginPageState extends State<loginPage> {
                     ],
                   ),
                 ),
-                Container(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 10,
-                      ),
-                      TextField(
-                        decoration: InputDecoration(
-                          fillColor: Colors.cyan.shade100,
-                          filled: true,
-                          hintText: "Email",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
+                SingleChildScrollView(
+                  child: Container(
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: 10,
+                        ),
+                        TextField(
+                          decoration: InputDecoration(
+                            fillColor: Colors.cyan.shade100,
+                            filled: true,
+                            hintText: "Email",
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      TextField(
-                        decoration: InputDecoration(
-                          fillColor: Colors.cyan.shade100,
-                          filled: true,
-                          hintText: "Password",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        TextField(
+                          decoration: InputDecoration(
+                            fillColor: Colors.cyan.shade100,
+                            filled: true,
+                            hintText: "Password",
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      SizedBox(height: 20),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Sign in',
-                            style: TextStyle(
-                                fontSize: 27,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white),
-                          ),
-                          CircleAvatar(
-                            radius: 30,
-                            backgroundColor: Colors.lightBlueAccent,
-                            child: IconButton(
-                              onPressed: () {
-                                Navigator.pushNamed(context, 'final_page');
-                              },
-                              icon: Icon(Icons.arrow_forward),
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 50),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              'Forgot Password?',
+                        SizedBox(
+                          height: 10,
+                        ),
+                        SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Sign in',
                               style: TextStyle(
-                                fontSize: 23,
-                                fontWeight: FontWeight.w500,
+                                  fontSize: 27,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
+                            CircleAvatar(
+                              radius: 30,
+                              backgroundColor: Colors.lightBlueAccent,
+                              child: IconButton(
+                                onPressed: () {
+                                  Navigator.pushNamed(context, 'final_page');
+                                },
+                                icon: Icon(Icons.arrow_forward),
                                 color: Colors.white,
-                                decoration: TextDecoration.underline,
                               ),
                             ),
-                          ),
-                          TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              'SignUp',
-                              style: TextStyle(
-                                fontSize: 23,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.white,
-                                decoration: TextDecoration.underline,
+                          ],
+                        ),
+                        SizedBox(height: 50),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Forgot Password?',
+                                style: TextStyle(
+                                  fontSize: 23,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white,
+                                  decoration: TextDecoration.underline,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ],
+                            TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'SignUp',
+                                style: TextStyle(
+                                  fontSize: 23,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white,
+                                  decoration: TextDecoration.underline,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 )
               ],
