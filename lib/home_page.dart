@@ -19,79 +19,81 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        body: Container(
-          padding: EdgeInsets.only(
-            top: MediaQuery.of(context).size.height * 0.1,
-            right: 35,
-            left: 35,
-          ),
-          child: Column(
-            children: [
-              Container(
-                width: 400,
-                height: 220.8,
-                child: Image.asset('assets/3.jpg'),
-              ),
-              Container(
-                width: 400,
-                height: 70,
-              ),
-              Container(
-                width: 400,
-                height: 30,
-                child: Center(
-                  child: Text(
-                    "Welcome",
-                    style: TextStyle(
-                        color: Colors.blue,
-                        fontSize: 25,
-                        fontWeight: FontWeight.w800),
-                  ),
+        body: SingleChildScrollView(
+          child: Container(
+            padding: EdgeInsets.only(
+              top: MediaQuery.of(context).size.height * 0.1,
+              right: 35,
+              left: 35,
+            ),
+            child: Column(
+              children: [
+                Container(
+                  width: 400,
+                  height: 220.8,
+                  child: Image.asset('assets/3.jpg'),
                 ),
-              ),
-              Container(
-                width: 400,
-                height: 30,
-                child: Center(
-                  child: Text(
-                    "Get all the info at your fingertips",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w600,
+                Container(
+                  width: 400,
+                  height: 70,
+                ),
+                Container(
+                  width: 400,
+                  height: 30,
+                  child: Center(
+                    child: Text(
+                      "Welcome",
+                      style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w800),
                     ),
                   ),
                 ),
-              ),
-              Container(
-                width: 400,
-                height: 100,
-              ),
-              Container(
-                width: 300,
-                height: 80,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: Colors.blue),
-                  child: Text("Login"),
-                  onPressed: () {
-                    Navigator.pushNamed(context, 'login_page');
-                  },
+                Container(
+                  width: 400,
+                  height: 30,
+                  child: Center(
+                    child: Text(
+                      "Get all the info at your fingertips",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
                 ),
-              ),
-              Container(
-                width: 400,
-                height: 20,
-              ),
-              Container(
-                width: 300,
-                height: 80,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: Colors.blue),
-                  child: Text("Don't have an account?  Sign up !"),
-                  onPressed: () {},
+                Container(
+                  width: 400,
+                  height: 100,
                 ),
-              ),
-            ],
+                Container(
+                  width: 300,
+                  height: 80,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(primary: Colors.blue),
+                    child: Text("Login"),
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'login_page');
+                    },
+                  ),
+                ),
+                Container(
+                  width: 400,
+                  height: 20,
+                ),
+                Container(
+                  width: 300,
+                  height: 80,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(primary: Colors.blue),
+                    child: Text("Don't have an account?  Sign up !"),
+                    onPressed: () {},
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

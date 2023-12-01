@@ -28,15 +28,15 @@ class _MyFinalPageState extends State<MyFinalPage> {
           child: Column(
             children: [
               Container(
-                  child: Text(
-                    "Hurray! Successfully signed in!",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 50,
-                      fontWeight: FontWeight.w600,
-                    ),
+                child: Text(
+                  "Hurray! Successfully signed in!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 50,
+                    fontWeight: FontWeight.w600,
                   ),
+                ),
               ),
             ],
           ),
