@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               children: [
                 Container(
-                  width: 400,
+                  width: double.infinity,
                   height: 220.8,
                   child: Image.asset('assets/3.jpg'),
                 ),
